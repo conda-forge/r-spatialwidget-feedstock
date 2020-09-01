@@ -1,4 +1,4 @@
-{% set version = '0.2.2' %}
+{% set version = "0.2.3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/spatialwidget_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/spatialwidget/spatialwidget_{{ version }}.tar.gz
-  sha256: 52b635901795d46d935074960c7414d291eb29fb96e2f526b10ce89822215c20
+  sha256: 32b3839449952b36e631fcfea540b9238a95f20af70df0ce4d8f368b3d031b48
 
 build:
-  merge_build_host: True  # [win]
-  number: 2
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -57,13 +57,10 @@ test:
 about:
   home: https://symbolixau.github.io/spatialwidget/articles/spatialwidget.html
   license: GPL-3.0-only
-  summary: Many packages use 'htmlwidgets' <https://CRAN.R-project.org/package=htmlwidgets> for
-    interactive plotting of spatial data. This package provides functions for converting
-    R objects, such as simple features, into structures suitable for use in 'htmlwidgets'
-    mapping libraries.
+  summary: Many packages use 'htmlwidgets' <https://CRAN.R-project.org/package=htmlwidgets> for interactive plotting of spatial data. This package provides functions for converting R objects, such as simple features, into structures suitable for use in 'htmlwidgets' mapping libraries.
   license_family: GPL3
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
