@@ -1,4 +1,4 @@
-{% set version = "0.2.3" %}
+{% set version = "0.2.5" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/spatialwidget_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/spatialwidget/spatialwidget_{{ version }}.tar.gz
-  sha256: 32b3839449952b36e631fcfea540b9238a95f20af70df0ce4d8f368b3d031b48
+  sha256: 524fdedb810380d6b2cb7a1e761a49c674e415ed3bd0a15d67682d27398f8007
 
 build:
   merge_build_host: true  # [win]
-  number: 2
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
