@@ -13,6 +13,8 @@ Package license: GPL-3.0-only
 
 Summary: Many packages use 'htmlwidgets' <https://CRAN.R-project.org/package=htmlwidgets> for interactive plotting of spatial data. This package provides functions for converting R objects, such as simple features, into structures suitable for use in 'htmlwidgets' mapping libraries.
 
+Development: https://github.com/symbolixau/spatialwidget
+
 About r-spatialwidget
 ---------------------
 
@@ -21,6 +23,8 @@ Home: https://symbolixau.github.io/spatialwidget/articles/spatialwidget.html
 Package license: GPL-3.0-only
 
 Summary: Many packages use 'htmlwidgets' <https://CRAN.R-project.org/package=htmlwidgets> for interactive plotting of spatial data. This package provides functions for converting R objects, such as simple features, into structures suitable for use in 'htmlwidgets' mapping libraries.
+
+Development: https://github.com/symbolixau/spatialwidget
 
 Current build status
 ====================
